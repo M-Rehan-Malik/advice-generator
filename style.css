@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+:root{
+    --primary-Light-Cyan : hsl(193, 38%, 86%);
+    --primary-Neon-Green : hsl(150, 100%, 66%);
+    
+    --neutral-Grayish-Blue : hsl(217, 19%, 38%);
+    --neutral-Dark-Grayish-Blue : hsl(217, 19%, 24%);
+    --neutral-Dark-Blue : hsl(218, 23%, 16%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope';
+    font-weight: 800;
+    background-color: var(--neutral-Dark-Blue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 500px;
+    height: auto;
+    background-color: var(--neutral-Dark-Grayish-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    padding-bottom: 0px;
+}
+.advice-number{
+    color: var(--primary-Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+}
+.quote{
+    margin-top: -5px;
+    font-size: 28px;
+    text-align: center;
+    color: var(--primary-Light-Cyan);
+}
+#divider{
+    margin-top: -18px;
+}
+.button{
+    width: 55px;
+    min-height: 55px;
+    background-color: var(--primary-Neon-Green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
